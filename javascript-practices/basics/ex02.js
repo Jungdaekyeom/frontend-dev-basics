@@ -1,7 +1,7 @@
 /*
 
 변수와 데이터 타입
-[기본타입(primitive type)]
+[기본타입(primitive type), 유사객체]
 undefined
 number
 string
@@ -24,6 +24,21 @@ boolean
 2. var f = function(){} 함수 리터럴1을 사용해서 생성(선생님추천)
 3. function f(){}
 */
+
+/*
+자바스크립트의 객체를 구분하는 또 다른 방법
+1. 내장 (Built-In, Native, Engine) 객체
+    자바스크립트 엔진 안에 미리 내장되어 있는 객체
+    Number, Boolean, Date, RegExp, ... : 생성자 함수
+    ParseInt, setTimeout, ...          : 일반 함수
+2. 호스트 객체
+    자바스크립트 엔진이 임베디드된 환경(호스트)의 객체(자바스크립트 접근 가능)
+    호스트 환경이 브라우저라면: document, location, XmlHttpRequest(통신할 때), window
+    호스트 환경이 노드(Node.JS)라면: os, http, fs, path
+3. 사용자 객체
+    자바스크립트 엔진이 실행되면서 생서되는 객체들...
+*/
+
 
 console.log("======== 원시 타입(Primitive Type) ========================");
 
@@ -77,3 +92,14 @@ console.log("f2:" + typeof(f2));
 
 console.log(f1(10, 20))
 console.log(f2(10, 20))
+
+console.log("======== 원시타입과 원시 타입을 Wrapper 객체는 구분없이 사용할 수 있다. ========================");
+
+console.log(i+i2);
+console.log(s+s2);
+
+// 원시 타입에 메소드가 호출될 때,
+// 임시 Wrapper 객체가 만들어져서 메소드 호출이 일어난 뒤 사라진다.(유사객체)
+console.log("======== 원시타입도 메소드 호출이 가능하다. ========================");
+console.log(b.valueOf());
+console.log(b2.valueOf());
