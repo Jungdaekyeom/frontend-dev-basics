@@ -46,9 +46,9 @@ var sum = function(){
     // }
 
     // 구현2
-    Array.prototype.forEach.call(arguments, function(e)){
+    Array.prototype.forEach.call(arguments, function(e){
         sum += e;
-    }
+    });
 
     return sum;
 }
