@@ -12,16 +12,30 @@ window.addEventListener("load", function(){
 	
 	// 2. Tag Name으로 가져오기
 	var h4s = document.getElementsByTagName('h4');
+	
 	// 3. Class Name 가져오기
+	var h5s = document.getElementsByClassName("header");
+	
 	// 4. CSS selector
+	var header7 = document.querySelector("#header-07");
+	var h6s = document.querySelectorAll(".header2")
+	
 	setTimeout(function(){
 		header01.innerText += ' by getElementById()'; // body에 처음에 표시된 문자에, 해당 문자열을 2초 뒤 추가
 		header02.innerText += ' by getElementById()';
 
 		h4s[0].innerText += ' by getElementByTagName()';
 		h4s[1].innerText += ' by getElementByTagName()';
+
+		h5s[0].innerText += ' by getElementByClassName()';
+		h5s[1].innerText += ' by getElementByClassName()';
+
+		header7.innerText += ' by querySelector()';
+		h6s[1].innerText += ' by querySelector()';
+		
 	}, 2000);
 });
+
 </script>
 </head>
 <body>
@@ -31,8 +45,13 @@ window.addEventListener("load", function(){
 	<h3 id = 'header-01'>Header 01</h3>
 	<h3 id = 'header-02'>Header 02</h3>
 	
-	<h4>header 03</h3>
-	<h4>header 04</h3>
+	<h4>header 03</h4>
+	<h4>header 04</h4>
 	
+	<h5 class='header'>header 05</h5>
+	<h5 class='header'>header 06</h5>
+	
+	<h6 id="header-07" class='header2'>header 07</h6>
+	<h6 id="header-07" class='header2'>header 08</h6>	
 </body>
 </html>
