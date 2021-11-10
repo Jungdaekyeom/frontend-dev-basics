@@ -6,21 +6,25 @@
 <script>
 	$(function() {
 		setTimeout(function() {
-			$("li:contains('샘플')").css("color", "red");
-			$("li:has('strong')").css("color", "blue");
+			$("ul li:first-child").css("color", "red");
+			$("ul li:last-child").css("color", "blue");
 		}, 1000);
 	});
 </script>
 </head>
 <body>
-	<h1>선택자 - jQuery Filter(contains, has)</h1>
+	<h1>선택자 - 첫번째 자식</h1>
 	<ul>
 		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
 		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
-		<li>텍스트 텍스트 <strong>텍스트</strong> 텍스트 텍스트
-		</li>
 		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
-		<li>샘플12345</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+	</ul>
+	<ul>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
 	</ul>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+<script>
+	// 클래스 선택자는 .사용
+	$(function() {
+		setTimeout(function() {
+			$("li *").css("font-weight", "bold");
+
+		}, 1000);
+	});
+</script>
+
+</head>
+<body>
+	<h1>선택자 - 전체</h1>
+	<ul>
+		<li><Strong>텍스트</Strong> 텍스트 텍스트 텍스트 텍스트</li>
+		<li><em>텍스트</em> 텍스트 텍스트 텍스트 텍스트</li>
+		<li><Strong>텍스트</Strong> 텍스트 텍스트 텍스트 텍스트</li>
+		<li><em>텍스트</em> 텍스트 텍스트 텍스트 텍스트</li>
+	</ul>
+</body>
+</html>
