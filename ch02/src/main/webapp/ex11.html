@@ -12,34 +12,24 @@ input {
 }
 
 input.focused {
-	background-color: #e1e6f6	
+	background-color: #e1e6f6
 }
 </style>
 <script>
-function changeBackground(el, className) {
-	el.className = className;
-}
+	function changeBackground(el, className) {
+		el.className = className;
+	}
 </script>
 </head>
 <body>
 	<form>
-		<input
-			onfocus='changeBackground(this, "focused")'
-			onblur='changeBackground(this, "")'
-			type="text"
-			name="userId"
-			id="user-id"
-			placeholder="아이디" />
-		
-		<br/><br/>
-		
-		<input
-			onfocus='changeBackground(this, "focused")'
-			onblur='changeBackground(this, "")' 
-			type="password" 
-			name="password" 
-			placeholder="비밀번호"/>
-		
+		<input onfocus='changeBackground(this, "focused")'
+			onblur='changeBackground(this, "")' type="text" name="userId"
+			id="user-id" placeholder="아이디" /> <br />
+		<br /> <input onfocus='changeBackground(this, "focused")'
+			onblur='changeBackground(this, "")' type="password" name="password"
+			placeholder="비밀번호" />
+
 	</form>
 </body>
 </html>
