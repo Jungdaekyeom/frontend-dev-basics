@@ -3,26 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src='browser-detect.js' type="text/javascript"></script>
+<script src='browser-detect.js' type='text/javascript'></script>
 <script>
-var s = "";
-for(prop in navigator){
-   s += (prop + ":" + navigator[prop]);
-}
 
+var s = "";
+for(prop in navigator) {
+	s += (prop + ":" + navigator[prop]);
+}
 console.log(s);
 
 BrowserDetect.init();
+
 console.log(BrowserDetect.browser);
 console.log(BrowserDetect.version);
 console.log(BrowserDetect.OS);
-
-</script><script>
-// 실행 후 소스에서 userAgent 찾아볼 것
-var s = "";
-for(prop in navigator){
-	s += (prop + " : " + navigator[prop]);
-}
 
 </script>
 </head>

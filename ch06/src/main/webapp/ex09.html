@@ -8,6 +8,7 @@
 window.addEventListener("load", function(){
 	var imgElement = document.createElement("img");
 
+	// (표준(prop o) + 비표준(prop x)) 속성을 읽기/쓰기 위해서 setAttribute/getAttribute 를 사용한다.
 	imgElement.setAttribute('src', 'https://www.blockmedia.co.kr/wp-content/uploads/2019/05/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90.png');
 	imgElement.setAttribute('style', 'width:300px');
 	imgElement.setAttribute('alt', '루피~');
@@ -15,13 +16,13 @@ window.addEventListener("load", function(){
 	imgElement['data-no'] = 20;				/* property */
 	imgElement.setAttribute('data-no', 10); /* 비표준 속성(property 아님) */ 
 
-	// 비주얼적인 효과, 필수적인거 아님.
 	setTimeout(function(){
 		document.body.appendChild(imgElement);
 		console.log(imgElement['data-no']); // 프로퍼티를 부른 것
 		console.log(imgElement.getAttribute('data-no')); // 프로퍼티로 부른게 아니라 태그의 속성(성질)을 지정하고, 그게 element가 될 때	
 	}, 2000);
 });
+
 </script>
 </head>
 <body>

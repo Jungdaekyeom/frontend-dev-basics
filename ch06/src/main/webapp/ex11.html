@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src='browser-detect.js' type="text/javascript"></script>
 <script>
 
 /*
@@ -63,28 +62,29 @@ DOM Event 종류
 window.addEventListener("load", function(){
 	// onclick 은 = 로
 	document
-	.getElementById('header-2')
-	.onclick = function(){
-		console.log("Event Model Level0 - Inline");
-	}
+		.getElementById('header-2')
+		.onclick = function() {
+		console.log("Event Model Level0 - Basic");
+	};
 	
 	// addeventlistener는 함수형태
 	document
 	.getElementById('header-3')
-	.addEventListener("click", function(){
-		console.log("Event Model Level2 - Inline");
+	.addEventListener("click", function() {
+		console.log("Event Model Level2");
 	});
 });
 
 </script>
 </head>
 <body>
-	<h1>DOM(Document Object Model)</h1>
-	<h2>5. Event 처리 </h2>
-	
-	<h3 onclick='console.log("Event Model Level0 - Inline");'>Event Model Level0 - Inline</h3>
-	<h3 id='header-2'>Event Model Level0 - Basic</h3>
-	<h3 id='header-3'>Event Model Level2</h3>
-	
+
+<h1>DOM(Document Object Model)</h1>
+<h2>5. Event 처리</h2>
+	   	
+<h3 onclick='console.log("Event Model Level0 - Inline");'>Event Model Level0 - Inline</h3>
+<h3 id='header-2'>Event Model Level0 - Basic</h3>
+<h3 id='header-3'>Event Model Level2</h3>
+
 </body>
 </html>
