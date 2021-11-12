@@ -4,16 +4,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-var number = 10;
-console.log(number, window.number);
-
-var s = "";
-for(prop in window){
-	s += (prop + ":" + window[prop] + "\n");
-}
-
-console.log(s);
-var child = window.open("popup.html", "popup", "width=300, height=200");
+var child = window.open("", "", "width=200, height=100");
 
 // 현재 모니터의 width 및 height를 구하기
 var widthScreen = screen.width;
@@ -30,6 +21,7 @@ setTimeout(function(){
 		child.moveBy(10, 10);
 	}, 100);
 }, 2000)
+
 </script>
 </head>
 <body>

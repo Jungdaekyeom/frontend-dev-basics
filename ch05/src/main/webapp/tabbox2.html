@@ -48,7 +48,7 @@ ul, ol	{ list-style-type: none }
 var onTabClicked = function() {
 	console.log("click!!!-" + this.innerText);
 	
-	// unselect
+	// unselect : 선택되지 않은 상태
 	var lisSelected = document.getElementsByClassName("selected");
 	//if(lisSelected.length === 1){
 	//	lisSelected[0].className = '';
@@ -63,10 +63,12 @@ var onTabClicked = function() {
 window.onload = function(){
 	console.log("DOM loaded");
 	var divTabBox = document.getElementsByClassName("tab-box")[0];
+	console.log(divTabBox)
 	console.log(divTabBox.childNodes);
 	
 	var ul = divTabBox.childNodes[1];
 	console.log(ul)
+	
 	var liTabs = ul.getElementsByTagName("li");
 	console.log(liTabs)
 	

@@ -5,6 +5,7 @@ var tabBox = {
 	init: function() {
 		window.addEventListener("load", this.onWindowLoad.bind(this));
 	},
+	
 	onTabClicked: function() {
 		// unselect
 		var lisSelected = document.getElementsByClassName("selected");
@@ -13,6 +14,7 @@ var tabBox = {
 		// select
 		this.className = "selected";
 	},
+	
 	onWindowLoad: function() {
 		var divTabBox = document.getElementsByClassName("tab-box")[0];
 		var ul = divTabBox.childNodes[1];
