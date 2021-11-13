@@ -10,6 +10,16 @@
 			$("ul > li > div > strong").css("color", "blue");
 		}, 1000);
 	});
+	
+	// 위 아래 둘 다 같음
+	
+	$(function() {
+		setTimeout(function() {
+			$("li strong").css("font-weight", "normal");
+			$("ul li div strong").css("color", "red");
+		}, 3000);
+	});
+	
 </script>
 </head>
 <body>
