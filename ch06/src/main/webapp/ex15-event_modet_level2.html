@@ -15,8 +15,13 @@
 window.addEventListener("load", function(){
 	var form = document.getElementById("form-login");
 	
+	// 지정한 이벤트가 대상에 전달될 때마다, 호출할 함수를 설정한다.
+	// 현재의 경우, submit을 호출함
+	// level0의 form.onsubmit = function() 와 같다.
 	form.addEventListener('submit', function(event){
 		
+		
+		// 이벤트를 취소할 수 있는 경우, 이벤트의 전파를 막지않고 그 이벤트를 취소합니다.
 		event.preventDefault();
 		
 		var inputEmail = document.getElementById("input-email").value;

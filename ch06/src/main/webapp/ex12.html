@@ -5,6 +5,7 @@
 <title>Insert title here</title>
 <script src='browser-detect.js' type="text/javascript"></script>
 <script>
+
 // element, eventName, eventHandler이 들어가는 함수를 만들자!
 var registerEventHandler = function(element, eventName, eventHandler){
 	element && 						// element가 null이 아니면
@@ -13,7 +14,7 @@ var registerEventHandler = function(element, eventName, eventHandler){
 	
 	element && 						// element가 null이 아니면
 	element.addEventListener && 	// 표준 브라우저라면
-	element.attachEvent(eventName, eventHandler);
+	element.addEventListener(eventName, eventHandler);
 }
 
 window.addEventListener("load", function(){
