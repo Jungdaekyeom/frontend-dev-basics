@@ -1,4 +1,5 @@
 var imageViewer = {
+	
 	init: function() {
 		$(function() {
 			$("#btn-change").click(this._changeImage.bind(this));
@@ -41,6 +42,7 @@ var imageViewer = {
 			
 		}
 	},
+	
 	_changeImage: function() {
 		
 		do {
