@@ -12,9 +12,11 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/ejs/ejs.js"></script>
 <script>
+
 var listEJS = new EJS({
 	url: '${pageContext.request.contextPath }/ejs/list-template.ejs'
 });
+
 var startNo;
 var fetch = function() {
 	var url = '${pageContext.request.contextPath }/api/guestbook/list' + (startNo ? ('?sn=' + startNo) : '');
@@ -34,6 +36,7 @@ var fetch = function() {
 		}
 	});
 }
+
 $(function(){
 	// ..
 	// ..

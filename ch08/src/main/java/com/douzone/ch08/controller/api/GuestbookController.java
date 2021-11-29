@@ -16,7 +16,6 @@ import com.douzone.ch08.controller.vo.GuestbookVo;
 @Controller
 @RequestMapping("/api/guestbook")
 public class GuestbookController {
-
 	
 	@ResponseBody
 	@RequestMapping("/add")

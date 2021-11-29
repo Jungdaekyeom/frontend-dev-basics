@@ -20,7 +20,6 @@ var render = function(vo) {
 		"<strong></strong>" + 
 		"<a href='' data-no='" + vo.no +"'>삭제</a>" + 
 		"</li>";
-		
 	return html;
 }
 
